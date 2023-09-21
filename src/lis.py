@@ -48,9 +48,9 @@ def longest_increasing_substring(x: Sequence[Any]) -> tuple[int, int]:
     """
     # The leftmost empty string is our first best bet
     best = (0, 0)
-    increasing_substrings = []
     # FIXME: explore the other possibilities
     """Finding increasing substrings"""
+    increasing_substrings = []
     for i in range(len(x)-1):
         accumulator = 0
         for j in range(i+1, len(x)+1):
